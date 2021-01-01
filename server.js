@@ -22,7 +22,7 @@ app.set("layout", 'layouts/layout')
 app.use(expressLayouts)
 app.use(express.static('public'))
 app.use(methodOverride('_method'))
-app.use(bodyParser.urlencoded({ limit: '10mb', extended: true })); 
+app.use(bodyParser.urlencoded({ limit: '10mb', extended: false })); 
 
 app.use(require("express-session")({ 
     secret: "Rusty is a dog", 

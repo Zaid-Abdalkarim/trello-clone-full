@@ -6,7 +6,8 @@ var listSchema = new mongoose.Schema({
         required: true
     }
     ,CardCount: {
-        type: Number
+        type: Number,
+        required: false
     }
 })
 
