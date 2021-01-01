@@ -1,0 +1,314 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 400;
+  line-height: 1.8em;
+  overflow-x: hidden;
+  background-color: #1b1b1b;
+}
+a {
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+#main {
+  margin: 0px 10%;
+  padding-top: 10%;
+  padding-left: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#main-intro {
+  margin: 0px 10%;
+  padding-left: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#main .main-text {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.line {
+  background-color: white;
+  padding-top: 1%;
+}
+
+hr {
+  margin: 0 auto;
+  background-color: #a55869;
+  color: #a55869;
+  width: 65%;
+  size: 1;
+  border-radius: 25px;
+  transition: width 0.2s;
+}
+
+p {
+  margin: 0 20px;
+  font-size: 20px;
+  text-align: left;
+}
+
+#gradient {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0,
+    #fff 100%
+  );
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: "";
+}
+
+.center:hover hr {
+  width: 75%;
+}
+.center {
+  padding-top: "50px";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.upper-center{
+  left: 50%;
+  
+  transform: translate(0, 0);
+}
+.bottom-center {
+  /* background-color: #2a263a; */
+  background-color: white;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.bottom-center:hover hr {
+  width: 75%;
+}
+
+.container-body {
+  margin: 14px auto;
+  max-width: 1050px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  width: 75%;
+  height: 75%;
+  text-align: center;
+  padding: 1em;
+}
+
+.btn {
+  margin-top: 20px;
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* On mouse-over */
+.btn:hover {
+  background: black;
+  border-radius: 1px;
+  border-radius: 25px;
+}
+/* Orange */
+.warning {
+  background: #fff;
+  color: gray;
+  transition: transform 0.2s;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  border-radius: 25px;
+  background: white;
+  padding: 10px;
+}
+.warning:hover {
+  color: white;
+  background: gray;
+  transform: scale(1.1);
+}
+.column {
+  float: left;
+  margin-bottom: 8px;
+}
+
+.featured {
+  margin: 0 20px;
+  font-size: 15px;
+  color: rgb(44, 44, 44);
+  text-align: left;
+}
+
+/* Navbar - Progress Bar */
+.navbar {
+  position: fixed;
+  top: 40%;
+  left: 3em;
+  height: 200px;
+  z-index: 1;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.progress-bar--circle {
+  position: absolute;
+  bottom: 5px;
+  left: -21px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d6374788;
+  transition: all 0.1s;
+}
+.progress-bar--circle:hover {
+  position: absolute;
+  bottom: 5px;
+  left: -21px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #a55869;
+  transition: all 0.1s;
+}
+.progress-bar--circle.active {
+  background-color: #a55869;
+}
+
+.navbar ul li {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  transition: all 0.1s;
+}
+
+.navbar ul li a:hover {
+  color: #a55869;
+  text-decoration: none;
+  text-align: left;
+  transition: all 0.1s;
+}
+
+/* Contact me */
+
+.contact-section {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 25px;
+  font-family: "Montserrat";
+  color: #1b1b1b;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: white;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: #1b1b1b;
+  color: white;
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: #a55869;
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
